@@ -11,7 +11,14 @@ class SchoolList(ListView):
     # queryset=School.objects.get(Scname='ZPHS')
     ordering=['pk']
 
+class StudentList(ListView):
+    model=Student
+    # template_name='App\school_list.html'
+    context_object_name='STO'
+    # queryset=School.objects.get(Scname='ZPHS')
+    ordering=['pk']
+
 class SchoolDetail(DetailView):
     model=School
     context_object_name='DOSI'
-    
+

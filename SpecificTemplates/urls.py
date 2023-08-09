@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # Static URL suffixes
     path('SchoolList/',SchoolList.as_view(),name='SchoolList'),
+    path('StudentList/',StudentList.as_view(),name='StudentList'),
 
     # Dynamic URL Suffixes
     re_path('(?P<pk>\d+)/',SchoolDetail.as_view(),name='SchoolDetail')    

@@ -11,6 +11,9 @@ class School(models.Model):
     def __str__(self):
         return self.Scname
 
+    def get_absolute_url(self):
+        return reverse('SchoolDetail',kwargs={'pk':self.pk})
+
 class Student(models.Model):
     Sname=models.CharField(max_length=100)
     Sage=models.CharField(max_length=100)

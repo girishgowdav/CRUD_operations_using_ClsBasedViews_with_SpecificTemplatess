@@ -8,8 +8,8 @@
 <body>
     <center>
         <h1>Displaying all data objects using ListView of ClsBasedViews </h1>
-        {% for scl in DOSI %}
-            <h1>{{scl.Scname}}</h1>
+        {% for scl in SLO %}
+        <a href="{{scl.pk}}"><h1>{{scl.Scname}}</h1></a>
         {% endfor %}
     </center>
 </body>

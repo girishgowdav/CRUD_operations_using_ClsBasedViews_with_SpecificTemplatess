@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Detailed info of {{DOSI.Scname}} is</h1>
+        <h2>Name of school is {{DOSI.Scname}}</h2>
+        <h2>Head of school is {{DOSI.Schead}}</h2>
+        <h2>Location of school is {{DOSI.Scloc}}</h2>
+
+        <h1>Student of {{DOSI.Scname}}</h1>
+        {% for std in DOSI.student.all %}
+        <h2>Name of student is {{std.Sname}}</h2>
+        <h2>Age of student is {{std.Sage}}</h2>
+        {% endfor %}
+    </center>
+</body>
+</html>

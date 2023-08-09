@@ -7,6 +7,11 @@ from App.models import *
 class SchoolList(ListView):
     model=School
     # template_name='App\school_list.html'
-    context_object_name='DOSI'
+    context_object_name='SLO'
     # queryset=School.objects.get(Scname='ZPHS')
     ordering=['pk']
+
+class SchoolDetail(DetailView):
+    model=School
+    context_object_name='DOSI'
+    
